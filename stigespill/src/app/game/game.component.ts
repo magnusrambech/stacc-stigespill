@@ -117,7 +117,7 @@ export class GameComponent implements OnInit {
     let diceElem = document.getElementById("dice-image");
     let msgElem = document.getElementById("dice-messages");
     let number = Math.floor(Math.random() * 6) + 1;
-    diceElem.setAttribute("src", "../src/images/dice-" + number + ".png");
+    diceElem.setAttribute("src", "./assets/images/dice-" + number + ".png");
     msgElem.innerHTML = playerName + " rolled a " + number + "!";
 
     this.movePlayer(number, this.currentPlayer);

@@ -43,10 +43,11 @@
 }
 #board {
   width: fit-content;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  background-color:azure;
+  background-color: azure;
   border: 1px solid darkgreen;
+  box-shadow: 2px 2px 10px;
 }
 
   #board * {
@@ -105,6 +106,7 @@
 }
 
 #game-panel {
+  box-shadow: 2px 2px 10px;
   border: 1px solid black;
   margin-left: 10px;
   display: flex;
@@ -146,6 +148,7 @@ hr {
 }
 
 #game-rules-container {
+  box-shadow: 2px 2px 10px;
   margin-right: 10px;
   display: flex;
   flex-direction: column;
