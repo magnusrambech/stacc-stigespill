@@ -1,8 +1,45 @@
-<div>
+<div id="game-wrapper">
+  <h1> SPACE WORMS</h1>
+  <hr />
+  <div id="game-container">
+    <div id="game-rules-container" *ngIf="this.board">
+      <h1>Game Information</h1>
+      <ul>
+        <li>Hit "Start Game" to start playing</li>
+        <li>Max {{maxPlayers}} playes.</li>
+        <li>Players take turn to roll a dice to move forward</li>
+        <li>Wormholes are shown as lines on the board</li>
+        <li><span style="color:red">Red</span> wormholes warps downwards</li>
+        <li><span style="color:green">Green</span> wormholes warps Upwards</li>
+        <li>First player to {{this.board.goal}} wins</li>
+      </ul>
 
-  <h1>TEST</h1>
-  <h2>TEST</h2>
-  <h3>TEST</h3>
-  <button (click)="getBoard()">Send Request</button>
+      <button (click)="redrawWormholes()" class="btn">Show Wormholes</button>
+      <button (click)="hideWormholes()" class="btn">Hide Wormholes</button>
+    </div>
+    <div id="board-container">
+      <svg id="svg">
+        <line id="line" />
+      </svg>
+      <div id="board">
 
+      </div>
+    </div>
+
+    <div id="game-panel">
+      <button *ngIf="gameRunning==false; else dice" id="start-btn" class="btn" (click)="startGame()">Start Game</button>
+      <ng-template #dice>
+        <div id="dice-box">
+          <p id="dice-messages">Waiting for {{currentPlayer.name}}, roll the dice!</p>
+          <p id="dice-message-roll">{{currentPlayer.name}}, roll the dice!</p>
+          <img id="dice-image" src="../src/images/dice-1.png" />
+          <button class="btn" (click)="rollDice(this.currentPlayer.name)">Roll dice</button>
+        </div>
+      </ng-template>
+      <div id="feedback-window" *ngIf="gameRunning==true;">
+        <p>Game Console</p>
+        <div id="message-box"></div>
+      </div>
+    </div>
+  </div>
 </div>

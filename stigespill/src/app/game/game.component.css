@@ -1,0 +1,157 @@
+
+
+* {
+  font-family: sans-serif;
+}
+#game-container {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2fcc4;
+}
+
+.goal {
+  background-color: #d67526;
+}
+.square-number {
+ 
+}
+.square-name {
+  font-size: 12px;
+  color: darkred;
+}
+.row {
+  display:flex;
+}
+.row-reversed {
+  flex-direction:row-reverse;
+}
+#board-container {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#board {
+  width: fit-content;
+  display:flex;
+  flex-direction: column;
+  background-color:azure;
+  border: 1px solid darkgreen;
+}
+
+  #board * {
+    user-select:none;
+  }
+
+
+#dice-image {
+  width: 100px;
+}
+
+#dice-box {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.player {
+  margin:0;
+  height:30px;
+  width: 30px;
+  font-size:20px;
+  align-self:center;
+  border: 1px solid black;
+  background-color: lightslategray;
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.playerBox {
+  width: 50px;
+}
+
+
+#svg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#line {
+  stroke-width: 4px;
+}
+#start-btn {
+  z-index:100;
+  position:absolute;
+}
+
+#game-panel {
+  border: 1px solid black;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 400px;
+}
+#feedback-window {
+  border-top:1px dashed red;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  z-index: 1000;
+  margin:10px;
+  height: 30px;
+}
+#game-wrapper {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+#message-box {
+  text-align:center;
+}
+hr {
+  border: 1px solid black;
+  width: 100%;
+}
+
+#game-rules-container {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 400px;
+  height: 500px;
+}
