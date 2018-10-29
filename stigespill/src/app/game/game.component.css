@@ -29,6 +29,7 @@
 .square-name {
   font-size: 12px;
   color: darkred;
+  text-align: center;
 }
 .row {
   display:flex;
