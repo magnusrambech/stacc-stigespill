@@ -16,7 +16,7 @@ export class Board {
     this.goal = json['goal'];
     this.name = json['name'];
     this.size = json['size'];
-    this.start = json['start']
+    this.start = json['start'];
   }
 
 
