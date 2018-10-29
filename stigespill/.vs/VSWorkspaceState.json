@@ -3,8 +3,9 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\game"
+    "\\src\\app\\game",
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\src\\app\\game\\game.component.ts",
+  "SelectedNode": "\\src\\browserslist",
   "PreviewInSolutionExplorer": false
 }
